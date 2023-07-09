@@ -49,7 +49,7 @@ function MobileNav() {
                 </div>
             </div>
 
-            <div className={`${open ? 'hidden' : ''} flex flex-col gap-4 p-4`}>
+            <div className={`${!open ? 'hidden' : ''} flex flex-col gap-4 p-4`}>
                 <Link href="/" className="hover:underline hover:opacity-75">
                     Home
                 </Link>

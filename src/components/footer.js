@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import wordmark from "../../public/wordmark.png";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faFacebookF, faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
     return (
@@ -9,6 +11,20 @@ export default function Footer() {
             <div className="grid md:grid-cols-4 gap-8">
                 <div className="space-y-8">
                     <Image className="w-2/3" src={wordmark} alt="" />
+
+                    <div className="space-x-6 text-3xl md:text-xl">
+                        <a href="https://www.facebook.com/profile.php?id=100094510811897">
+                            <FontAwesomeIcon icon={faFacebookF} />
+                        </a>
+
+                        <a href="https://linkedin.com/in/jackgledhill/">
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+
+                        <a href="https://github.com/Jacks-Software-House">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                    </div>
 
                     <p className="text-xs">Copyright &copy; Jack's Software House, 2023</p>
                 </div>

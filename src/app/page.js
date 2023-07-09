@@ -8,6 +8,7 @@ import Navbar from "@/components/navbar";
 
 import avatar from "public/avatar.png";
 import clientNooder from "public/client-nooder.png";
+import clientPD from "public/client-pd.jpg";
 import clientStreamcord from "public/client-streamcord.png";
 import clientUnify from "public/client-unify.png";
 import portrait from "public/portrait.png";
@@ -20,6 +21,7 @@ import testimonialNooder from "public/testimonial-nooder.jpg";
 import testimonialOliver from "public/testimonial-oliver.png";
 
 import {
+    faFacebookF,
     faGithub,
     faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
@@ -61,6 +63,10 @@ export default function Home() {
 
                             <a href="https://linkedin.com/in/jackgledhill/" className="hover:opacity-50 text-2xl">
                                 <FontAwesomeIcon icon={faLinkedin} />
+                            </a>
+
+                            <a href="https://www.facebook.com/profile.php?id=100094510811897" className="hover:opacity-50 text-2xl">
+                                <FontAwesomeIcon icon={faFacebookF} />
                             </a>
 
                             <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_CONTACT}`} className="hover:opacity-50 text-2xl">
@@ -153,7 +159,7 @@ export default function Home() {
 
                 <h2 className="text-center">My Satisfied Customers</h2>
 
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-16">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-16 items-center">
                     <a href="https://streamcord.io" className="col-span-1">
                         <Image src={clientStreamcord} alt="" height={128} />
                     </a>
@@ -164,6 +170,10 @@ export default function Home() {
 
                     <a href="https://unify.holdings" className="col-span-1">
                         <Image src={clientUnify} alt="" height={128} />
+                    </a>
+
+                    <a href="https://pdcleaningservices.co.uk" className="col-span-1">
+                        <Image src={clientPD} alt="" height={64} />
                     </a>
                 </div>
             </section>
