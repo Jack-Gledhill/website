@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-blue-700;
+    }
+    hr {
+        @apply border-grey-400;
+        @apply mx-12;
+    }
+
+    article {
+        max-width: 900px;
+        @apply mx-auto;
+        @apply py-12;
+        @apply px-8;
+        @apply space-y-8;
+    }
+    article ul,
+    article ol {
+        @apply space-y-2;
+    }
+    article ul {
+        @apply list-disc;
+    }
+    article ol {
+        @apply list-decimal;
+    }
+    article ul li p,
+    article ol li p {
+        @apply px-4;
+    }
+
+    /* Main content constructs */
+    header, section {
+        max-width: 1000px;
+        @apply px-8;
+        @apply mx-auto;
+    }
+    header {
+        @apply py-16;
+        @apply space-y-8;
+        @apply text-center;
+        @apply text-white;
+    }
+
+    section {
+        @apply py-12;
+        @apply space-y-16;
+    }
+
+    footer {
+        @apply bg-blue-700;
+        @apply text-white;
+        @apply py-12;
+        @apply space-y-8;
+    }
+    footer > * {
+        max-width: 1200px;
+        @apply px-8;
+        @apply mx-auto;
+    }
+
+    /* Used for heroes */
+    main {
+        @apply bg-center;
+        @apply bg-no-repeat;
+        @apply bg-cover;
+        @apply bg-origin-border;
+    }
+
+    h1 {
+        @apply text-5xl;
+        @apply md:text-7xl;
+        @apply font-bold;
+    }
+    h2 {
+        @apply text-4xl;
+        @apply md:text-5xl;
+        @apply font-bold;
+    }
+    h3 {
+        @apply text-2xl;
+        @apply md:text-3xl;
+        @apply font-bold;
+    }
+    h4 {
+        @apply text-xl;
+        @apply md:text-2xl;
+        @apply font-bold;
+    }
+    h5 {
+        @apply text-lg;
+        @apply md:text-xl;
+        @apply font-bold;
+    }
+    h6 {
+        @apply md:text-lg;
+        @apply font-bold;
+    }
+}

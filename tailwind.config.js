@@ -1,6 +1,10 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ['./pages/*.{js,ts,jsx,tsx}', './components/*.{js,ts,jsx,tsx}'],
-    darkMode: 'class',
+    content: [
+        './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    ],
     theme: {
         colors: {
             transparent: 'transparent',
@@ -27,34 +31,21 @@ module.exports = {
                 600: '#71717a',
                 700: '#52525b'
             },
-
             decor: {
-                red: {
-                    DEFAULT: '#f56565',
-                },
-                orange: {
-                    DEFAULT: '#ff9355',
-                },
-                yellow: {
-                    DEFAULT: '#ffd155',
-                },
-                lime: {
-                    DEFAULT: '#c6eb6c',
-                },
-                green: {
-                    DEFAULT: '#48bb78',
-                },
-                blue: {
-                    DEFAULT: '#4faff0',
-                },
-                violet: {
-                    DEFAULT: '#ff70e7',
-                }
+                blue: '#4faff0'
             }
         },
-
         container: {
             center: true,
+        },
+        extend: {
+            backgroundImage: {
+                'hero-shapes': "url('/hero-shapes.svg'), linear-gradient(135deg, #4faff0, #1f6bcb)",
+                'hero-about': "url('/hero-about.jpg')",
+                'hero-contracts': "url('/hero-contracts.jpg')",
+                'hero-pricing': "url('/hero-pricing.jpg')",
+                'faq-gradient': "linear-gradient(135deg, #1f6bcb, #13407a)"
+            },
         },
     },
     plugins: [],
