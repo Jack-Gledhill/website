@@ -32,7 +32,9 @@ export default function Footer() {
                 <div>
                     <h6 className="leading-loose">Business Address</h6>
                     <p>{process.env.NEXT_PUBLIC_ADDRESS_COMPANY}</p>
-                    <p>{process.env.NEXT_PUBLIC_ADDRESS_STREET}</p>
+                    <p>{process.env.NEXT_PUBLIC_ADDRESS_STREET_1}</p>
+                    <p>{process.env.NEXT_PUBLIC_ADDRESS_STREET_2}</p>
+                    <p>{process.env.NEXT_PUBLIC_ADDRESS_STREET_3}</p>
                     <p>{process.env.NEXT_PUBLIC_ADDRESS_CITY}</p>
                     <p>{process.env.NEXT_PUBLIC_ADDRESS_COUNTY}</p>
                     <p>{process.env.NEXT_PUBLIC_ADDRESS_POSTCODE}</p>
